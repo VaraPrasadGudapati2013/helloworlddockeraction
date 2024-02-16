@@ -44,7 +44,7 @@ jobs:
       needs: [Test, Load-Test]
       environment:
         name: Production
-        url: https://knotsolutions.com/
+        url: https://writeabout.net
       if: github.event.inputs.environment == 'Production'
       steps:
         - run: |
